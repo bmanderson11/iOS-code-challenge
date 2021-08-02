@@ -14,12 +14,30 @@
 - (instancetype)initWithAttributes:(NSDictionary *)attributes
 {
     if (self = [super init]) {
+        
+        
+       
+        
+        
         _total = [attributes[@"total"] unsignedIntegerValue];
+        
+        
+        
+        for(NSString *key in [attributes allKeys]) {
+            
+            
+            
+          
+        }
+        
         _businesses = [self.class businessesFromJSONArray:attributes[@"businesses"]];
+        
     }
     
     return self;
 }
+
+
 
 + (NSArray *)businessesFromJSONArray:(NSArray *)businessesJSON
 {

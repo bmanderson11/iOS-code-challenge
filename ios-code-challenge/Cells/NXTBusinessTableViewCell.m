@@ -7,6 +7,7 @@
 //
 
 #import "NXTBusinessTableViewCell.h"
+#import <CoreLocation/CoreLocation.h>
 
 @implementation NXTBusinessTableViewCell
 

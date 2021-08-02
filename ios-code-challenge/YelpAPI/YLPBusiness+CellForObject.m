@@ -32,4 +32,6 @@ NSString *const kNXTBusinessTableViewCellIdentifier = @"NXTBusinessTableViewCell
     return 55.0f;
 }
 
+
+
 @end

@@ -41,7 +41,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     id<NXTCellForObjectDelegate> object = self.mutableObjects[indexPath.row];
-    return [object estimatedCellHeightForObjectForTableView:tableView];
+    return 100;
 }
     
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -93,6 +93,10 @@
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    int position = scrollView.contentOffset.y;
+    if (position > scrollView.contentSize.height){
+        
+    }
     if(self.tableViewDidScroll) {
         self.tableViewDidScroll();
     }

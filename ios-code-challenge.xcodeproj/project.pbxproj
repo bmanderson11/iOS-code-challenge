@@ -29,6 +29,8 @@
 		C5CEF1D62015350A009D1571 /* NXTBusinessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5CEF1D42015350A009D1571 /* NXTBusinessTableViewCell.xib */; };
 		C5CEF1D92015354C009D1571 /* NXTBusinessTableViewCell+YLPBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CEF1D82015354C009D1571 /* NXTBusinessTableViewCell+YLPBusiness.m */; };
 		C5CEF1DC20153618009D1571 /* YLPBusiness+CellForObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CEF1DB20153618009D1571 /* YLPBusiness+CellForObject.m */; };
+		E829842026B46AFA002E8F77 /* YelpBusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E829841F26B46AFA002E8F77 /* YelpBusinessSearch.swift */; };
+		E829842226B8121F002E8F77 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E829842126B8121F002E8F77 /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		C5CEF1D82015354C009D1571 /* NXTBusinessTableViewCell+YLPBusiness.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NXTBusinessTableViewCell+YLPBusiness.m"; sourceTree = "<group>"; };
 		C5CEF1DA20153618009D1571 /* YLPBusiness+CellForObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YLPBusiness+CellForObject.h"; sourceTree = "<group>"; };
 		C5CEF1DB20153618009D1571 /* YLPBusiness+CellForObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YLPBusiness+CellForObject.m"; sourceTree = "<group>"; };
+		E829841F26B46AFA002E8F77 /* YelpBusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpBusinessSearch.swift; sourceTree = "<group>"; };
+		E829842126B8121F002E8F77 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		E98E17AF5F4AF737558F432A /* libPods-ios-code-challenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-code-challenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3125ABF2066AA64D25CD6E /* Pods-ios-code-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-code-challengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-code-challengeTests/Pods-ios-code-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE926015E1B4191E0337FDF0 /* libPods-ios-code-challengeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-code-challengeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +236,7 @@
 			children = (
 				8DC8B22B22A186E000CA0435 /* MasterViewController.swift */,
 				8DC8B21922A1764500CA0435 /* DetailViewController.swift */,
+				E829842126B8121F002E8F77 /* UIImageView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -241,8 +246,8 @@
 			children = (
 				C5CEF1BE201446C1009D1571 /* AFYelpAPIClient.h */,
 				C5CEF1BF201446C1009D1571 /* AFYelpAPIClient.m */,
-				C5CEF1C52014D6DB009D1571 /* AFYelpAPIClient+Search.m */,
 				C5CEF1C42014D6DB009D1571 /* AFYelpAPIClient+Search.h */,
+				C5CEF1C52014D6DB009D1571 /* AFYelpAPIClient+Search.m */,
 				C5CEF1C82014DB71009D1571 /* YLPSearchQuery.h */,
 				C5CEF1C92014DB71009D1571 /* YLPSearchQuery.m */,
 				C5CEF1CB2014DC36009D1571 /* YLPSearch.h */,
@@ -251,6 +256,7 @@
 				C5CEF1CF2014E1FD009D1571 /* YLPBusiness.m */,
 				C5CEF1DA20153618009D1571 /* YLPBusiness+CellForObject.h */,
 				C5CEF1DB20153618009D1571 /* YLPBusiness+CellForObject.m */,
+				E829841F26B46AFA002E8F77 /* YelpBusinessSearch.swift */,
 			);
 			path = YelpAPI;
 			sourceTree = "<group>";
@@ -463,12 +469,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5CEF1832013F25A009D1571 /* AppDelegate.m in Sources */,
+				E829842226B8121F002E8F77 /* UIImageView.swift in Sources */,
 				C5CEF1D92015354C009D1571 /* NXTBusinessTableViewCell+YLPBusiness.m in Sources */,
 				C5CEF1942013F25A009D1571 /* main.m in Sources */,
 				C5CEF1CD2014DC36009D1571 /* YLPSearch.m in Sources */,
 				C5CEF1B92014411C009D1571 /* NXTDataSource.m in Sources */,
 				8DC8B22C22A186E000CA0435 /* MasterViewController.swift in Sources */,
 				C5CEF1D02014E1FD009D1571 /* YLPBusiness.m in Sources */,
+				E829842026B46AFA002E8F77 /* YelpBusinessSearch.swift in Sources */,
 				C5CEF1D52015350A009D1571 /* NXTBusinessTableViewCell.m in Sources */,
 				8DC8B21A22A1764500CA0435 /* DetailViewController.swift in Sources */,
 				C5CEF1CA2014DB71009D1571 /* YLPSearchQuery.m in Sources */,
@@ -640,11 +648,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8XCRURZB6Z;
+				DEVELOPMENT_TEAM = 7A5YCUK436;
 				INFOPLIST_FILE = "ios-code-challenge/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dustinlange.ios-code-challenge";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BrandonAnderson.ios-code-challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ios-code-challenge/ios-code-challenge-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -660,11 +668,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8XCRURZB6Z;
+				DEVELOPMENT_TEAM = 7A5YCUK436;
 				INFOPLIST_FILE = "ios-code-challenge/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dustinlange.ios-code-challenge";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BrandonAnderson.ios-code-challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ios-code-challenge/ios-code-challenge-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

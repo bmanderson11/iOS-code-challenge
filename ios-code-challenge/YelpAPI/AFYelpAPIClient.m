@@ -9,7 +9,7 @@
 #import "AFYelpAPIClient.h"
 #import "AFOAuth2Manager.h"
 
-static NSString *const kYelpAPIKey = @"";
+static NSString *const kYelpAPIKey = @"rdKDCJx6W3C3vMx2SBBBIAKuFbZXWBsmruJDp6Duuv_QkF4_AY4OSnJ-pEFiyvhBY4t9QKiS387Fn6rlFtY9ymQSfqS96T2D5MLpxP8Sn8uR8ER3_ka5nJSZWyIEYXYx";
 static NSString *const kYelpAPIBaseURL = @"https://api.yelp.com/v3/";
 
 @interface AFYelpAPIClient()
@@ -35,6 +35,7 @@ static NSString *const kYelpAPIBaseURL = @"https://api.yelp.com/v3/";
 {
     [self.requestSerializer setAuthorizationHeaderFieldWithCredential:self.credentials];
     
+   
     return [super GET:URLString
            parameters:parameters
              progress:downloadProgress

@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "21-212313_fork-and-plate-icon-restaurant-small-icon-png.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
